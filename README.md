@@ -1,4 +1,4 @@
-# France Academy - ENT Scolaire Multi-Écoles
+# France Academy - Une Sorte d'ENT Scolaire Multi-Écoles
 
 ## Description du Projet
 
