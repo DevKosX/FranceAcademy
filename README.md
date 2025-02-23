@@ -44,4 +44,4 @@ France Academy est un projet de création d'un Environnement Numérique de Trava
 
 ## Installation et Configuration
 
-*   **Suivre ce tutoriel : ** https://apical.xyz/fiches/travailler_avec_laravel/installation_de_homestead_sous_windows_pour_developper_en_laravel
+*   **Suivre ce tutoriel :** https://apical.xyz/fiches/travailler_avec_laravel/installation_de_homestead_sous_windows_pour_developper_en_laravel
