@@ -37,7 +37,7 @@ France Academy est un projet de création d'un Environnement Numérique de Trava
 ## Architecture Technique
 
 *   **Framework :** Laravel (PHP).
-*   **Base de données :** PostgreSQL.
+*   **Base de données :** PSQL.
 *   **Modèle Multi-Tenant :** Bases de données séparées par tenant.
 *   **Interface Utilisateur :** HTML, CSS, Bootstrap.
 *   **Outils de Développement :** Vagrant, Homestead, Git, VirtualBox.
