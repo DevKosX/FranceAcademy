@@ -2,6 +2,10 @@
 
 @section('content')
     <style>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
         .dashboard-card {
             background-color: #ffffff;
             padding: 40px;
@@ -16,6 +20,7 @@
             box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); 
         }
 
+<<<<<<< HEAD
         .dashboard-title h1 {
             font-family: 'Exo 2', serif;
             font-size: 2.8rem;
@@ -35,6 +40,30 @@
             text-align: justify;
             font-weight: 400;
         }
+=======
+    
+        .dashboard-title h1 {
+        font-family: 'Exo 2', serif;
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #080c18;
+        margin-bottom: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.3;
+    }
+
+    .dashboard-text {
+
+        font-size: 1.2rem;
+        color: #5d6d7e;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        text-align: justify;
+        font-weight: 400;
+    }
+
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
 
         .image-container {
             margin-top: 30px;
@@ -56,6 +85,7 @@
             transform: scale(1.05);
         }
 
+<<<<<<< HEAD
         .btn-primary {
             background: linear-gradient(90deg, #3c3e42, #4c4646);
             border: none;
@@ -72,6 +102,8 @@
             transform: translateY(-3px);
         }
 
+=======
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
         @media (max-width: 768px) {
             .dashboard-card {
                 padding: 25px;
@@ -101,6 +133,7 @@
             <div class="image-container">
                 <img src="{{global_asset('dist')}}/images/imagelycee2.jpg" alt="Image du lycée">
             </div>
+<<<<<<< HEAD
             <div class="text-center mt-4">
                 <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#charteModal">Consulter la charte et les règles</button>
             </div>
@@ -210,3 +243,8 @@
         </div>
     </div>
 @endsection
+=======
+        </div>
+    </div>
+@endsection
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a

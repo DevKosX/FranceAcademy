@@ -17,12 +17,21 @@ class ClasseRepository implements ClasseRepositoryInterface {
 
 
 
+<<<<<<< HEAD
     public function listeClasses(){
         $classes = Classe::with('filiere.matieres')->with('matieres')->orderby('id')->get();
 
 
         return $classes;
     }
+=======
+        public function listeClasses(){
+            $classes = Classe::with('filiere')->orderby('id')->get();
+           
+
+            return $classes;
+        }
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
                
         public function enregistrementClasse($nom,$filiere){
             $filiere = Filiere::find( $filiere);

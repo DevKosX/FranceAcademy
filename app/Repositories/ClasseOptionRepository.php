@@ -12,6 +12,10 @@ class ClasseOptionRepository implements ClasseOptionRepositoryInterface {
     public function listeClasseOption()
         {
             $classes = ClasseOption::with(['matiere.professeurs.user', 'professeur.user'])->orderBy('nom')->get();
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
             $professeursHabilitesParMatiere = [];
         
             foreach ($classes as $classe) {
@@ -72,7 +76,11 @@ class ClasseOptionRepository implements ClasseOptionRepositoryInterface {
             return false;
         }
     
+<<<<<<< HEAD
     public function infoClasseOption(int $id)
+=======
+        public function infoClasseOption(int $id)
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
     {
     $classeoption = ClasseOption::with('matiere')->with('eleves.user')
                     ->with('professeur')
@@ -85,7 +93,11 @@ class ClasseOptionRepository implements ClasseOptionRepositoryInterface {
                 return false;               
     }
             
+<<<<<<< HEAD
     public function attribuerClasseOption(int $classeId, int $eleveId)
+=======
+    public function attribuerClasseOption(int $eleveId, int $classeId)
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
     {
         $eleve = Eleve::findOrFail($eleveId);
         $classe_options = ClasseOption::find($classeId);
@@ -101,8 +113,12 @@ class ClasseOptionRepository implements ClasseOptionRepositoryInterface {
     
     
         if (!$matieresFiliereExist) {
+<<<<<<< HEAD
             $eleve->classe_options()->attach($classeId);
             $eleve->save();
+=======
+            $eleve->classe_options()->sync($classeId);
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
             return true;
         }
     

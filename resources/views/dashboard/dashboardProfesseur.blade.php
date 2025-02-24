@@ -16,6 +16,10 @@
         box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
     .dashboard-title h1 {
         font-family: 'Exo 2', serif;
         font-size: 2.8rem;
@@ -28,6 +32,10 @@
     }
 
     .dashboard-text {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
         font-size: 1.2rem;
         color: #5d6d7e;
         line-height: 1.8;
@@ -36,6 +44,11 @@
         font-weight: 400;
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
     .image-container {
         margin-top: 30px;
         text-align: center;
@@ -71,6 +84,7 @@
     }
 </style>
 
+<<<<<<< HEAD
 <div class="container my-5">
     <div class="dashboard-card">
         <h1 class="dashboard-title">Bienvenue sur le tableau de bord de France Academy</h1>
@@ -194,3 +208,22 @@
     </div>
 </div>
 @endsection
+=======
+    <div class="container my-5">
+        <div class="dashboard-card">
+            <h1 class="dashboard-title">Bienvenue sur le tableau de bord de France Academy</h1>
+            <p class="dashboard-text">
+                Nous sommes ravis de vous accueillir sur la plateforme dédiée à l'accompagnement des lycéens à travers la France et l'Europe.
+                Notre mission est de vous fournir les outils et ressources nécessaires pour garantir une éducation de qualité et soutenir le parcours éducatif de chaque étudiant.
+            </p>
+            <p class="dashboard-text">
+                En tant que professeur, vous avez accès à une gamme complète de fonctionnalités pour gérer efficacement les programmes éducatifs,
+                suivre les performances des étudiants et gerer correctement les classes ainsi que les examens que vous créez.
+            </p>
+            <div class="image-container">
+                <img src="{{global_asset('dist')}}/images/imagelycee2.jpg" alt="Image du lycée">
+            </div>
+        </div>
+    </div>
+@endsection     
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a

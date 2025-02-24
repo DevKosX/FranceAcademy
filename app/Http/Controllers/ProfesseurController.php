@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Pays;
 use App\Models\Ville;
+<<<<<<< HEAD
 use App\Models\Classe;
+=======
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use App\Http\Requests\AjoutProfRequest;
@@ -187,11 +190,14 @@ public function enregistrementProfesseur(AjoutProfRequest $request) {
             return view('admin.ficheProfesseur', $result);
         }
 
+<<<<<<< HEAD
         
 
      
 
 
+=======
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
      
 
         public function associerExamen(Request $request, $id)
@@ -206,6 +212,7 @@ public function enregistrementProfesseur(AjoutProfRequest $request) {
                 return redirect()->route('listeClassesProf')->with('error', 'Erreur lors de l\'attribution de l\'examen.');
             }
         }
+<<<<<<< HEAD
 
         public function ficheMatiere(int $matiereId){
             $interface = $this->professeur_interface;
@@ -220,5 +227,7 @@ public function enregistrementProfesseur(AjoutProfRequest $request) {
               
         ]);
     }
+=======
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
        
     }

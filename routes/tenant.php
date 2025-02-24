@@ -98,7 +98,11 @@ Route::middleware([
         Route::post('/enregistrer_eleve', [AdminController::class, 'enregistrementEleve']);
         Route::post('/supprimer_eleve/{id}', [AdminController::class, 'suppressionEleve'])->name('supprimer_eleve')->middleware('auth');
         Route::post('/attribuer_classe/{id}', [AdminController::class, 'attribuerClasse'])->name('attribuer_classe');
+<<<<<<< HEAD
         Route::post('/fiche_eleve/{id}', [AdminController::class, 'ficheEleve'])->name('fiche_eleve')->middleware('auth');
+=======
+
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
         //filiere tenant.php
 
         Route::get('/dashboardPrincipal', [FiliereController::class, 'index'])->name('dashboard.principal');

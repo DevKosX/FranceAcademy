@@ -195,12 +195,20 @@ class ProfesseurRepository implements ProfesseurRepositoryInterface {
 
 
 
+<<<<<<< HEAD
    public function ficheProfesseur(int $id){
     
         $professeurs = Professeur::with('user')
                             ->with('matieres')
                             ->with('examens')
                             ->with('classeOptions.eleves')
+=======
+    public function ficheProfesseur(int $id){
+    
+        $professeurs = Professeur::with('user')
+                            ->with('matieres')
+                            ->with('classeOptions')
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
                             ->with('classes', function($query){
                                 $query->withPivot('classe_id', 'matiere_id', 'professeur_id');
                                 $query->with('filiere');
@@ -218,16 +226,24 @@ class ProfesseurRepository implements ProfesseurRepositoryInterface {
                 $villes = Ville::orderBy('nom')->with('users')->find($id);
                 $id = $villes->pays_id;
                 $pays = Pays::orderBy('nom')->find($id);
+<<<<<<< HEAD
                 
        
             return ['professeurs' => $professeurs,'matieres' => $matieres,'villes' => $villes,'pays' => $pays ];
+=======
+            //dd($id);
+            return ['professeurs' => $professeurs,'matieres' => $matieres,'villes' => $villes,'pays' => $pays];
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
         }
 
         return false;
         
     }
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
 public function listeClassesProfesseur()
 {
 $profid= auth()->id();
@@ -242,7 +258,11 @@ $profid= auth()->id();
 
     $infos= $professeur->classes; 
     return $infos;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
 
 public function ajoutExamen()
 {

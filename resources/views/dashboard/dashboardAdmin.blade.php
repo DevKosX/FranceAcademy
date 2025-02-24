@@ -38,6 +38,10 @@
     }
 
     .dashboard-text {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
         font-size: 1.2rem;
         color: #5d6d7e;
         line-height: 1.8;
@@ -65,7 +69,11 @@
     }
 
     .btn-primary {
+<<<<<<< HEAD
         background: linear-gradient(90deg, #3c3e42, #4c4646);
+=======
+        background: linear-gradient(90deg, #1e3a8a, #2563eb);
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
         border: none;
         color: #fff;
         font-weight: 500;
@@ -76,9 +84,39 @@
     }
 
     .btn-primary:hover {
+<<<<<<< HEAD
         background: linear-gradient(90deg, #d81d1d, #e01d1d);
         transform: translateY(-3px);
     }
+=======
+        background: linear-gradient(90deg, #1d4ed8, #2563eb);
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 1024px) {
+        .dashboard-card {
+            padding: 40px;
+        }
+
+        .dashboard-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .dashboard-card {
+            padding: 30px;
+        }
+
+        .dashboard-title {
+            font-size: 2.2rem;
+        }
+
+        .dashboard-text {
+            font-size: 1rem;
+        }
+    }
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
 </style>
 
 <div class="container my-5">
@@ -92,6 +130,7 @@
             En tant qu'administrateur, vous avez accès à une gamme complète de fonctionnalités pour gérer efficacement les programmes éducatifs,
             suivre les performances des étudiants et collaborer avec les enseignants et le personnel éducatif.
         </p>
+<<<<<<< HEAD
         <div class="image-container">
             <img src="{{global_asset('dist')}}/images/imagelycee2.jpg" alt="Image du lycée">
         </div>
@@ -205,3 +244,12 @@
     </div>
 </div>
 @endsection
+=======
+
+        <div class="image-container">
+            <img src="{{global_asset('dist')}}/images/imagelycee2.jpg" alt="Image du lycée">
+        </div>
+    </div>
+</div>
+@endsection
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a

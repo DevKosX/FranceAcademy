@@ -56,4 +56,9 @@ class EleveTenantController extends Controller
         ]);
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a

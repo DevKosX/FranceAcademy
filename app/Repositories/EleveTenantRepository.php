@@ -359,7 +359,10 @@ class EleveTenantRepository implements EleveTenantRepositoryInterface{
 
         return $result;
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
 
     public function moyenneGeneraleAvecOption(int $userId)
     {
@@ -375,14 +378,22 @@ class EleveTenantRepository implements EleveTenantRepositoryInterface{
          ->first();
         
             if (!$eleve || !$eleve->classe || !$eleve->classe->filiere) {
+<<<<<<< HEAD
               return null; 
+=======
+              return null; // Ou une valeur par défaut, comme 0
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
            }
     
             $totalPoints = 0;
              $totalCoefficients = 0;
         
         
+<<<<<<< HEAD
           
+=======
+            // Calcul des points pour les matières de la filière normale
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
              foreach ($eleve->classe->filiere->matieres as $matiere) {
                $totalNotesMatiere = 0;
                $nombreNotesMatiere = 0;
@@ -395,14 +406,25 @@ class EleveTenantRepository implements EleveTenantRepositoryInterface{
                  }
     
                  $moyenneMatiere = ($nombreNotesMatiere > 0) ? ($totalNotesMatiere / $nombreNotesMatiere) : null;
+<<<<<<< HEAD
                  if($moyenneMatiere !== null){
+=======
+                  
+                   // Ne prendre en compte que si au moins un examen existe dans cette matière
+                   if($moyenneMatiere !== null){
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
                       $matiereCoefficientFiliere = $matiere->pivot->coefficient;
                        $totalPoints += $moyenneMatiere * $matiereCoefficientFiliere;
                        $totalCoefficients += $matiereCoefficientFiliere;
                     }
              }
+<<<<<<< HEAD
   
              
+=======
+        
+            // Calcul des points pour les matières des options (coefficient 2)
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
              foreach ($eleve->classe_options as $classeOption) {
                $matiereOption = $classeOption->matiere;
                $totalNotesOption = 0;
@@ -425,8 +447,13 @@ class EleveTenantRepository implements EleveTenantRepositoryInterface{
         
          $moyenneGenerale = ($totalCoefficients > 0) ? ($totalPoints / $totalCoefficients) : 0;
            return round($moyenneGenerale, 2);
+<<<<<<< HEAD
     
     }
+=======
+    }
+    
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
     // public function moyenneExamensFiliere(int $userId) {
 
     //     $eleve = Eleve::with('classe.filiere.matieres', 'classe.eleves')

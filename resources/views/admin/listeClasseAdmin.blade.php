@@ -21,23 +21,34 @@
                         <th scope="col" class="text-center">Filière</th>
                         <th scope="col" class="text-center">Niveau</th>
                         <th scope="col" class="text-center">Élèves</th>
+<<<<<<< HEAD
                         <th scope="col" class="text-center">Professeurs et matiere</th>
                         <th scope="col" class="text-center">Matiere attribuées</th>
+=======
+                        <th scope="col" class="text-center">Nombres de matiere enseignée</th>
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
                         <th scope="col" class="text-center">Fiches</th>
                         <th scope="col" class="text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($result as $item)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
                         <tr>
                             <th scope="row" class="text-center">{{ $item->id }}</th>
                             <td class="text-center fw-semibold">{{ $item->nom }}</td>
                             <td class="text-center">{{ $item->filiere->nom ?? 'Aucune filière' }}</td>
                             <td class="text-center">{{ $item->filiere->niveau ?? 'Aucune filière' }}</td>
                             <td class="text-center">{{ $item->eleves->count() }}</td>
+<<<<<<< HEAD
                             <td class="text-center">{{ $item->professeurs->count() ?? '0' }}</td>
                             <td class="text-center">{{ $item->matieres->count() ?? '0' }}/{{ $item->filiere->matieres->count() ?? '0' }}</td>
+=======
+                            <td class="text-center">{{ $item->matieres->count() ?? 'Aucun matiere' }}</td>
+>>>>>>> 7732459b1a45b866405aa956d49bd57483e54f8a
                             <td class="text-center">
                                 <a class="btn btn-primary btn-sm" href='/info_classe/{{$item->id}}'>
                                     <i class="fas fa-eye"></i> Voir
