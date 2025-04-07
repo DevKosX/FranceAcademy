@@ -1,6 +1,6 @@
 # France Academy
 
-![France Academy Logo](chemin/vers/ton/image/logo.png)
+![France Academy Logo](public/dist/images/LOGO.png)
 
 🎓 **Qu'est-ce que France Academy ?**  
 France Academy est un Environnement Numérique de Travail (ENT) avancé permettant la gestion centralisée de plusieurs établissements scolaires. Notre solution offre une plateforme unique où chaque école conserve son propre espace tout en bénéficiant d'outils partagés pour l'administration, l'enseignement et le suivi des élèves.
