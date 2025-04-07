@@ -26,8 +26,10 @@ France Academy est un Environnement Numérique de Travail (ENT) avancé permetta
   
 
 🚀 **Installation**  
-1. Clonez le repository  
-bash
+1. Suivre l'installation : https://apical.xyz/fiches/travailler_avec_laravel/installation_de_homestead_sous_windows_pour_developper_en_laravel
+2. Clonez le repository
+
+```bash
 cd CodeLaravel
 git clone https://github.com/votre-utilisateur/france-academy.git
 
