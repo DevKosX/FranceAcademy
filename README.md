@@ -38,3 +38,16 @@ cd france-academy
 composer install
 npm install
 
+🧩 **Structure de l'application**  
+- **Modèle multi-tenant** : Chaque école dispose d'une base de données séparée  
+- **Contrôle d'accès basé sur les rôles** : Administrateurs, professeurs, élèves  
+- **Tableau de bord personnalisé** pour chaque type d'utilisateur  
+- **Modules intégrés** pour la gestion des filières, matières, classes et notes
+
+👥 **Rôles utilisateurs**  
+| Rôle        | Permissions principales |
+|-------------|-------------------------|
+| Administrateur | Gestion complète de l'établissement, utilisateurs, filières, matières |
+| Professeur  | Gestion des cours, notes, communication avec les élèves |
+| Élève       | Consultation des notes, emploi du temps, ressources de cours |
+
