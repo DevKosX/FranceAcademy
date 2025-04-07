@@ -23,9 +23,18 @@ France Academy est un Environnement Numérique de Travail (ENT) avancé permetta
 - Composer  
 - PostgreSQL  
 - Vagrant et VirtualBox pour l'environnement de développement
+  
 
 🚀 **Installation**  
 1. Clonez le repository  
 ```bash
 git clone https://github.com/votre-utilisateur/france-academy.git
 cd france-academy
+
+2. **Configurez Homestead.** Suivez notre tutoriel complet pour l'installation de l'environnement de développement : [Installation de Homestead pour Laravel](lien_vers_tutoriel)
+
+3. **Installez les dépendances**  
+```bash
+composer install
+npm install
+
